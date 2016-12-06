@@ -1,0 +1,42 @@
+---
+AD: Abort Done.  XC stops exposure by abort command
+DA: After scanning condition (kV, mA, etc) setup
+DB: After scanning condition (kV, mA, etc) setup
+DC: After scanning condition (kV, mA, etc) setup
+DD: After scanning condition (kV, mA, etc) setup
+DE: After scanning condition (kV, mA, etc) setup
+DF: After scanning condition (kV, mA, etc) setup
+DG: After scanning condition (kV, mA, etc) setup
+DH: After scanning condition (kV, mA, etc) setup
+DI: After scanning condition (kV, mA, etc) setup
+DJ: After scanning condition (kV, mA, etc) setup
+DK: After scanning condition (kV, mA, etc) setup
+DL: After scanning condition (kV, mA, etc) setup
+DM: After scanning condition (kV, mA, etc) setup
+DN: After scanning condition (kV, mA, etc) setup
+DO: After scanning condition (kV, mA, etc) setup
+DP: After scanning condition (kV, mA, etc) setup
+DQ: After scanning condition (kV, mA, etc) setup
+DR: After scanning condition (kV, mA, etc) setup
+DS: After scanning condition (kV, mA, etc) setup
+DT: After scanning condition (kV, mA, etc) setup
+DU: After scanning condition (kV, mA, etc) setup
+DV: After scanning condition (kV, mA, etc) setup
+DW: After scanning condition (kV, mA, etc) setup
+DX: After scanning condition (kV, mA, etc) setup
+DY: After scanning condition (kV, mA, etc) setup
+DZ: After scanning condition (kV, mA, etc) setup
+FB: Setup Busy.  XC is setting up (anode rotation and filament heating)
+FD: Setup Done.  XC finishes the set up
+LB: Log Busy.  XC is collecting the log
+LD: Log Done.  XC finished collecting the log
+MM: Maintenance Mode.  XC connects to maintenance program
+PB: PAS Busy.  During scanning condition (kV, mA, etc) setup
+RR: ! 'Reset.  Initial state of XC (After power ON or Reset XC).  Remote mode: XC
+  connects to console'
+SB: Scan Busy.  Normal scan is running and continues (Arc recovery)
+SD: Scan Done.  After scan OR stopped by Error
+UB: Unit busy.  Warm-up, Seasoning or special scan that is operated from PC is running
+  and continues (Arc recovery)
+UD: Unit Down.  After Warm-up, Seasoning or special scan that is operated from PC,
+  or stopped by Error

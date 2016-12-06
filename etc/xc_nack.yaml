@@ -1,0 +1,154 @@
+---
+'064': P command Scan mode and extra scan mode is abnormal.
+'065': P command Extra scan mode is abnormal.
+'066': P command Appointed scan mode was selected.
+'067': P command Undefined scan mode was selected.
+068: P command The gantry rotation speed is 0 s when extra scan mode is not local
+  or scano.
+069: P command The scan time is not set in custom scan 3.
+06A: P command The number of exposures is not set in custom scan 3.
+06B: P command Exposure mode is abnormal.
+06C: P command The exposure time is outside the specified time period.
+06D: P command The exposure time parameter is abnormal.
+06E: P command The monitoring scan time is outside the specified time period.
+06F: P command The monitoring scan time parameter is abnormal.
+'070': P command The main scan time is outside the specified time period.
+'071': P command The main scan time parameter is abnormal.
+'072': P command The tube voltage is outside the specified range.
+'073': P command The tube voltage parameter is abnormal.
+'074': P command The tube current is outside the specified range.
+'075': P command The tube current parameter is abnormal.
+'076': P command The second tube current is outside the specified range.
+'077': P command The second tube current parameter is abnormal.
+078: P command There are no Sure Exposure condition lists.
+079: P command The tube current is 10 mA or less in Sure Exposure condition list.
+07B: P command The format of the tube current setting is abnormal in Sure Exposure
+  condition list.
+07C: P command The maximum value in Sure Exposure condition list is greater than the
+  tube current setting.
+07D: P command XY modulation direction flag is abnormal.
+07E: P command There are no XY modulation condition lists.
+07F: P command The XY modulation conditions are outside the specified range.
+080: P command The format of the XY modulation conditions is abnormal.
+081: P command The ECG modulation factor exceeds 99%.
+082: P command The tube current after ECG modulation is 80 mA or less.
+083: P command The format of the ECG modulation factor is abnormal.
+084: 'P command Lower limit error in XY modulation (gantry rotation: 0.5 to 2.0 s)'
+085: 'P command Lower limit error in XY modulation (gantry rotation: 0.4 s)'
+086: 'P command Lower limit error in XY modulation (gantry rotation: 0.35 to 0.4 s)'
+087: 'P command Lower limit error in XYZ modulation (gantry rotation: 0.5 to 2.0 s)'
+088: 'P command Lower limit error in XYZ modulation (gantry rotation: 0.4 s)'
+089: 'P command Lower limit error in XYZ modulation (gantry rotation: 0.35 to 0.4
+  s)'
+08A: P command The exposure power exceeds the maximum permissible power.
+08B: P command The short-time rating goes over.
+08C: P command Only "SIMPLE" can be specified in local scanning.
+08D: P command Only "SIMPLE" can be specified in scanoscopy.
+08E: P command The rotor is set to low-speed rotation during fast SureStart in prospective
+  mode.
+08F: P command The exposure time is smaller than monitoring scan time ? main scan
+  time ? 1 s
+090: P command Monitoring scan exceeds 18 kW.
+091: P command Exposure mode error in normal scanning
+092: P command In Dual Energy, only "SIMPLE" can be accepted.
+093: P command In Dual Energy, only "SIMPLE" can be accepted.
+094: P command In Dual Energy, if the first mA is greater than the second mA, it cannot
+  be accepted.
+095: P command Estimated heating amount error
+096: P command The scan condition continuation SW was specified in scans other than
+  local scan and normal scan.
+097: P command In normal scan, the scan condition continuation SW was specified in
+  exposures other than simple exposure.
+098: P command Exposure mode error in single count scanning
+099: P command In monitoring scan, only "SIMPLE" can be specified.
+09A: P command The exposure time in monitoring scan exceeds 52.5 s.
+09B: P command The power in monitoring scan exceeds 13.5 kW.
+09C: P command In helical shuttle scan, the exposure mode setting is abnormal (setting
+  1).
+09D: P command In helical shuttle scan, the exposure mode setting is abnormal (setting
+  2).
+09E: P command In helical shuttle scan, the exposure mode of setting 1 and that of
+  setting 2 do not match.
+09F: P command In helical shuttle scan, the tube voltage of setting 1 and that of
+  setting 2 do not match.
+0A0: P command When CXB-750D/CXB-750E is selected, monitoring scan is selected.
+0A1: P command Abnormal modulation direction flag during OE modulation
+0A2: P command Abnormal frontal direction flag during OE modulation
+0A3: P command Lower limit error within a slice during OE modulation (XY)
+0A4: P command Lower limit error within a slice during OE modulation (XYZ)
+0A5: P command Lower limit error between slices during OE modulation (when the lower
+  limit of the previous slice is higher than the minimum mA of the next slice)
+0A6: P command Lower limit error between slices during OE modulation (when the lower
+  limit of the next slice is higher than the minimum mA of the previous slice)
+0C8: B command The parameter is abnormal.
+0C9: C command The parameter is abnormal.
+0CA: E command The parameter is abnormal.
+0CB: F command The command ID is abnormal.
+0CC: F command The parameter format is abnormal.
+0CD: F command Heating instruction is incorrect.
+0CE: G command The parameter is abnormal.
+0CF: G command The parameter format is abnormal.
+0D0: J command The parameter format is abnormal.
+0D1: J command The parameter format of the date and time is abnormal.
+0D2: L command The parameter is abnormal.
+0D3: L command The log No. format is abnormal.
+0D4: L command The log No. parameter is abnormal.
+0D5: X command The X-MNT parameter is abnormal.
+0D6: X command The sub command is abnormal.
+12C: B command Reception at a timing other than scanning
+12D: B command Reception in mode other than "SIMPLE" in normal scan or monitoring
+  scan
+'136': E command Reception at a timing other than scanning
+'137': E command Reception by E command in invalid exposure mode
+13E: F command Rotor rotation instruction or filament heating instruction was received
+  when an X-ray tube selection error occurred.
+13F: F command Rotor rotation instruction or filament heating instruction was received
+  when a backup memory error occurred.
+'140': F command Indication of rotation of the rotor that is currently stopped because
+  the P command is not received.
+'141': F command Indication of main heat because the P command is not received.
+'142': F command Reception during scanning
+'143': F command Indication of rotation during the occurrence of an error that stops
+  the rotor rotation.
+'144': F command Indication of heating during the occurrence of an error that turns
+  OFF filament heating.
+'146': F command Indication of rotation of the rotor that is currently stopped while
+  the console power is OFF.
+'147': F command Indication of heating while the console power is OFF.
+'149': F command Indication of main heat during the occurrence of main heating timeout
+14A: G command The scan mode is abnormal.
+14B: G command The setting of the number of exposures is abnormal.
+14C: G command Setup is not yet performed.
+14D: G command During OLP waiting status
+14E: G command During scanning
+'154': J command Reception during scanning
+15E: K command Reception during scanning
+'168': L command The specified error log is not present.
+'169': L command The specified exposure log is not present.
+16A: L command Reception during setup
+16B: L command Reception during scanning
+'172': U command The tube current setting is abnormal.
+17C: Z command Abnormal parameter
+17D: Z command Instruction for power save mode during filament heating
+17E: Z command Instruction for power save mode during motor rotation
+17F: F command Instruction for filament heating during power save mode
+'180': F command Instruction for motor rotation during power save mode
+'181': Z command Reception in FB status
+'182': Z command Reception in SB status
+'183': Z command Reception in LB status
+'184': Z command Reception in ZB status
+'193': T0 command The second command is abnormal.
+'195': T1 command The second command is abnormal.
+'196': TIF command If value setting error
+'197': TI command The second command is abnormal.
+'199': TH command The second command is abnormal.
+19A: T command The first command is abnormal.
+19B: TS command The second command is abnormal.
+19C: THW command The operating time (minute) setting range is abnormal.
+1C6: UIW command The selection of the focal size is abnormal when the IF adjustment
+  value is written.
+1C7: UIR command The selection of the focal size is abnormal when the IF adjustment
+  value is read.
+1C8: UI command The second command is abnormal.
+1C9: U command The first command is abnormal.
+1CA: UIW command Tube current over-setting

@@ -1,0 +1,6 @@
+b2502 : Overrun error.  Communication system error, noise.
+b2504 : Framing error.  Communication system error, noise.
+b2510 : Illegal command.
+b2520 : Command length error.  Communication system error, noise.
+b2540 : Cannot accept.
+b2580 : Maintenance mode.

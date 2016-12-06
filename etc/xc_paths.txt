@@ -1,0 +1,4 @@
+spag_401 = C:/Program Files (x86)/SPAG_v401/SPAG_v401.exe
+spag_400 = C:/Program Files (x86)/SPAG_v400/SPAG_v400.exe
+spag_321 = C:/Program Files (x86)/SPAG321/SPAG.exe
+xctest_513 = C:/Program Files (x86)/XCtest513/xctest513.exe

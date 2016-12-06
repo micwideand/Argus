@@ -1,0 +1,81 @@
+xc:
+  1:
+  - Door open at XRAY
+  - Door open
+  - HFG error
+  - XC error
+  2:
+  - over kV (set)
+  - over kV (fixed)
+  - under kV (set)
+  - under kV (fixed)
+  3:
+  - over mA (set)
+  - over mA (fixed)
+  - under mA (set)
+  - under kV (fixed)
+  4:
+  - inverter thermal
+  - under IF
+  - over IF
+  - HV over current
+  5:
+  - X-tube flow
+  - X-tube thermal
+  - Cable interlock
+  - TEST mode error
+  6:
+  - TEST mode fault
+  - Arc
+  - AC fault
+  - off xray detect
+  7:
+  - exposure CAN timeout
+  - rotor timeout
+  - preheating timeout
+  - filament timeout
+  8:
+  - exposure timeout (soft)
+  - starter receive
+  - XC Watchdog
+  - exposure timeout(hard)
+  9:
+  - starter trip
+  - rotor current drop
+  - starter NAK
+  - starter communication
+  10:
+  - HFG COM
+  - backup memory
+  - OLP limit 100%
+  - focus relay
+  11:
+  - SCB
+  - inverter
+  - HV unit
+  - HV cable
+  12:
+  - out of range
+  - non
+  - XPOW off at XRAY
+  - AC unit
+  13:
+  - abnormal XRAY
+  - abnormal HFXRAY
+  - HFG watchdog
+  - HFG set
+  14:
+  - not defined
+  - not defined
+  - not defined
+  - not defined
+  15:
+  - not defined
+  - not defined
+  - not defined
+  - not defined
+  16:
+  - not defined
+  - not defined
+  - not defined
+  - not defined

@@ -1,0 +1,145 @@
+xc3:
+  1:
+  - not defined
+  - not defined
+  - not defined
+  - not defined
+  - not defined
+  - not defined
+  - not defined
+  - not defined
+  2:
+  - not defined
+  - not defined
+  - not defined
+  - not defined
+  - not defined
+  - not defined
+  - not defined
+  - not defined
+  3:
+  - not defined
+  - not defined
+  - not defined
+  - not defined
+  - not defined
+  - not defined
+  - not defined
+  - not defined
+  4:
+  - not defined
+  - not defined
+  - not defined
+  - not defined
+  - not defined
+  - not defined
+  - not defined
+  - not defined
+  5:
+  - not defined
+  - not defined
+  - not defined
+  - not defined
+  - not defined
+  - not defined
+  - not defined
+  - not defined
+  6:
+  - not defined
+  - not defined
+  - not defined
+  - not defined
+  - Under kV fixed
+  - Under kV set
+  - Over kV fixed
+  - Over kV set
+  7:
+  - not defined
+  - not defined
+  - Under mA fixed
+  - Under mA set
+  - Over mA fixed
+  - Over mA set
+  - HV overcurrent
+  - Over IF
+  8:
+  - not defined
+  - not defined
+  - under IF
+  - Inverter thermal
+  - Test mode error
+  - Cable interlock
+  - X-tube thermal
+  - X-tube flow
+  9:
+  - not defined
+  - not defined
+  - Off X-ray detect
+  - AC Fault
+  - Arc
+  - not defined
+  - not defined
+  - not defined
+  10: 
+  - not defined
+  - not defined
+  - not defined
+  - not defined
+  - Filament timeout
+  - Preheating timeout
+  - Rotor timeout
+  - Exposure Can timeout
+  11: 
+  - not defined
+  - not defined
+  - Exposure timeout(Hard)
+  - XC Watchdog
+  - Exposure timeout(Soft)
+  - not defined
+  - Starter trip
+  - Starter NAK
+  12: 
+  - not defined
+  - not defined
+  - Rotor Current drop
+  - not defined
+  - Focus relay
+  - OLP limit 100%
+  - Backup memory
+  - Tube select
+  13: 
+  - not defined
+  - not defined
+  - HV CABLE
+  - HV UNIT
+  - INVERTER
+  - SCB
+  - AC UNIT
+  - HFG Watchdog
+  14: 
+  - not defined
+  - not defined
+  - HFG set
+  - Out of range
+  - ECG-Mod. low-mA timeout
+  - Rest Time timeout
+  - Rest Time are too short
+  - not defined
+  15: 
+  - not defined
+  - not defined
+  - XPOW off at XRAY
+  - Door Open at XRAY
+  - not defined
+  - not defined
+  - Abnormal HFXRAY
+  - Abnormal XRAY
+  16: 
+  - not defined
+  - not defined
+  - not defined
+  - not defined
+  - Starter COM
+  - HFG COM
+  - not defined
+  - not defined

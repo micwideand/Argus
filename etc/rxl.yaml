@@ -1,0 +1,833 @@
+---
+gts_detail_1:
+  OPCONTA error details:
+  - fixed
+  - fixed
+  - Setting of the internal error number
+  - Setting of the internal error number
+  - Setting of the internal error number
+  - Setting of the internal error number
+  - Setting of the internal error number
+  - Setting of the internal error number
+  slit:
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - pulse motor abnormal
+  - software error
+  - input parameter error
+  - operating time-out
+  das_mode:
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - input parameter error
+  - operating time-out
+  wedge:
+  - fixed
+  - fixed
+  - fixed
+  - BGN ON waiting time-out
+  - pulse motor abnormal
+  - software error
+  - input parameter error
+  - operating time-out
+  couch top horizontal 1:
+  - fixed
+  - fixed
+  - Overrun/servo-amplifier abnormal/reverse-direction movement(10 mm or more)
+  - stop position
+  - watchdog
+  - operation time-out
+  - Data error(specified movement range and autoslide values abnormal)
+  - interlock terminated
+  gantry_rotation:
+  - fixed
+  - fixed
+  - gantry stop position error
+  - gantry speed error
+  - DD motor abnormal
+  - position pulse time-out
+  - DD motor communication error
+  - other errors
+  gantry_tilting:
+  - fixed
+  - fixed
+  - reverse movement (2 degrees or more)/indicator angle data abnormal/encoder time-out
+  - limit error
+  - watchdog error
+  - tilt movement time-out or encoder time-out
+  - data error (specified tilt angle error)
+  - interlocks interrupted
+  light_projector:
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  OPCONTA:
+  - fixed
+  - fixed
+  - communication error
+  - software error
+  - operation abnormal(Refer to the wedge, slit, beam trimmer errors for details.)
+  - communication time-out
+  - NAK received
+  - the specified number of communication retries exceeded
+  main:
+  - fixed
+  - fixed
+  - abnormal CT fluoroscopy safety circuit
+  - command error
+  - dual port RAM error
+  - hardware timer check error (checked at the time of starting)
+  - message queue error (software error)
+  - system starting error (software error)
+  das:
+  - fixed
+  - fixed
+  - X-ray system error (X-RAY ON status continues even after X-ray generation is terminated.)
+  - gantry rotation system error
+  - initialization error (DAS CCP)
+  - time-out
+  - DAS CCP interrupt abnormal
+  - software error or interruption of operation due to interlock activation
+  couch vertical:
+  - fixed
+  - fixed
+  - reverse movement (10 mm or more)
+  - fixed
+  - watchdog error
+  - vertical movement time-out
+  - data error (Error in specified movement range)
+  - interlocks interrupted
+  gts:
+  - fixed
+  - fixed
+  - fixed
+  - 100 V/200 V OFF
+  - SS/ADI hang-up
+  - fixed
+  - fixed
+  - fixed
+  unknown1:
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  MUDAT:
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - abnormal number of data sets in 1 view
+  - channel switching error
+  - SOTROT fail
+  - ROTSOT fail
+  unknown2:
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+gts_detail_2:
+  com_pre:
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  detector switching:
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - input parameter
+  - fixed
+  couch horizontal 2:
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - overrun
+  - servo amplifier abnormality
+  - movement in the opposite direction
+  unknown3:
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  unknown4:
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  unknown5:
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  unknown6:
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  unknown7:
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  unknown8:
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  unknown9:
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  fixed4:
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  fixed5:
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  fixed6:
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  fixed7:
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  fixed8:
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  fixed9:
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+  - fixed
+gts_detail_1_name:
+  0: OPCONTA error details
+  2: slit
+  4: das_mode
+  6: wedge 1
+  8: couch top horizontal 1
+  10: gantry_rotation
+  12: gantry_tilting
+  14: light_projector
+  16: OPCONTA
+  18: main
+  20: das
+  22: couch vertical
+  24: gts
+  26: unknown1
+  28: MUDAT
+  30: unknown2
+gts_detail_2_name:
+  0: com_pre
+  2: detector switching
+  4: couch horizontal 2
+  6: couch vertical 2
+  8: unknown3
+  10: unknown4
+  12: unknown5
+  14: unknown6
+  16: unknown7
+  18: unknown8
+  20: fixed4
+  22: fixed5
+  24: fixed6
+  26: fixed7
+  28: fixed8
+  30: fixed9
+lmudat_1:
+  1:
+  - not defined
+  - CONSOLE error display request
+  - CONSOLE warning display request
+  - Error LOG request
+  2:
+  - communication error between the gantry and the console
+  - not defined
+  - not defined
+  - not defined
+  3:
+  - data error on the data transmission PWB in the gantry
+  - FAN stoppage in the data transmission section
+  - communication error in the gantry
+  - PWB setting error in the gantry
+  4:
+  - data error on the DAS PWB
+  - DAS FAN stoppage
+  - DAS internal communication error
+  - DAS setting error
+  5:
+  - not defined
+  - not defined
+  - not defined
+  - not defined
+  6:
+  - DAS UL4 LINK error
+  - DAS UL3 LINK error
+  - DAS UL2 LINK error
+  - DAS UL1 LINK error
+  7:
+  - DAS UL4 CRC error
+  - DAS UL3 CRC error
+  - DAS UL2 CRC error
+  - DAS UL1 CRC error
+  8:
+  - DAS UL4 CB error
+  - DAS UL3 CB error
+  - DAS UL2 CB error
+  - DAS UL1 CB error
+  9:
+  - DAS DL4 CRC error
+  - DAS DL3 CRC error
+  - DAS DL2 CRC error
+  - DAS DL1 CRC error
+  10:
+  - DAS DL4 CB error
+  - DAS DL3 CB error
+  - DAS DL2 CB error
+  - DAS DL1 CB error
+  11:
+  - DAS DL4 ID error
+  - DAS DL3 ID error
+  - DAS DL2 ID error
+  - DAS DL1 ID error
+  12:
+  - DAS DL SYNC error
+  - SCH DL SYNC error
+  - SCH UL SYNC error
+  - GIO UL SYNC error
+  13:
+  - SCH DL2 CRC error
+  - SCH DL1 CRC ERROR
+  - SCH DL2 LINK2 error
+  - SCH DL2 LINK1 error
+  14:
+  - SCH2 CH ID error
+  - SCH1 CH ID error
+  - SCH DL2 CB error
+  - SCH DL1 CB error
+  15:
+  - DAS DL2 LINK2 error
+  - DAS DL2 LINK1 error
+  - DAS DL1 LINK2 error
+  - DAS DL1 LINK1 error
+  16:
+  - DAS DL4 LINK2 error
+  - DAS DL4 LINK1 error
+  - DAS DL3 LINK2 error
+  - DAS DL3 LINK1 error
+lmudat_2:
+  1:
+  - GIO UL4 CB error
+  - GIO UL3 CB error
+  - GIO UL2 CB error
+  - GIO UL1 CB error
+  2:
+  - GIO4 CH ID error
+  - GIO3 CH ID error
+  - GIO2 CH ID error
+  - GIO1 CH ID error
+  3:
+  - SCH UL2 CRC error
+  - SCH UL1 CRC error
+  - SCH UL2 LINK1 error
+  - SCH UL1 LINK1 error
+  4:
+  - SCH DL1 LINK2 error
+  - SCH DL1 LINK1 error
+  - SCH UL2 CB error
+  - SCH UL1 CB error
+  5:
+  - not defined
+  - not defined
+  - SCRT TEMP error
+  - SCST TEMP error
+  6:
+  - GIO UL2 LINK2 error
+  - GIO UL2 LINK1 error
+  - GIO UL1 LINK2 error
+  - GIO UL1 LINK1 error
+  7:
+  - GIO UL4 LINK2 error
+  - GIO UL4 LINK1 error
+  - GIO UL3 LINK2 error
+  - GIO UL3 LINK1 error
+  8:
+  - GIO UL4 CRC error
+  - GIO UL3 CRC error
+  - GIO UL2 CRC error
+  - GIO UL1 CRC error
+  9:
+  - SCST FAN4 error
+  - SCST FAN3 error
+  - SCST FAN2 error
+  - SCST FAN1 error
+  10:
+  - SCRT FAN4 error
+  - SCRT FAN3 error
+  - SCRT FAN2 error
+  - SCRT FAN1 error
+  11:
+  - SCRT DDR FAIL error
+  - SCRT DDR error
+  - SCST DDR FAIL error
+  - SCST DDR error
+  12:
+  - not defined
+  - not defined
+  - not defined
+  - not defined
+  13:
+  - SCRT DSW MISS SETTING
+  - SCST DSW MISS SETTING
+  - SCRT TP error
+  - SCST TP error
+  14:
+  - View error in communication between the SCRT and SCST
+  - View error in communication between the GTS and SCST
+  - SCRT ROW error
+  - SCST ROW error
+  15:
+  - SCRT CVD error
+  - SCST CVD error
+  - View error in communication between the DAS and SCRT
+  - View error in communication between the ACC and SCRT
+  16:
+  - serial SYNC error between the GTS and SCST
+  - serial CRC error between the GTS and SCST
+  - serial SYNC error between the ACC and SCRT
+  - serial CRC error between the ACC and SCRT
+lmudat_3:
+  1:
+  - not defined
+  - not defined
+  - not defined
+  - not defined
+  2:
+  - DAS FAN3 stoppage
+  - DAS FAN2 stoppage
+  - DAS FAN1 stoppage
+  - not defined
+  3:
+  - DAS DDR error
+  - DAS CONT error
+  - DAS FAN5 stoppage
+  - DAS FAN4 stoppage
+  4:
+  - VIEW DAS CONT DATA error
+  - DAS VIEW TRIGGER error
+  - DAS DDR OVERFLOW error
+  - DAS DDR FAIL error
+  5:
+  - ADC +6 V FAIL error
+  - ADC -6 V FAIL error
+  - ADC +3.3 V FAIL error
+  - ADC +5 V FAIL error
+  6:
+  - DAS CB error
+  - DAS CRC error
+  - DAS LINK error
+  - COMP +6 V FAIL error
+  7:
+  - DAS BOARD ID [3]
+  - DAS BOARD ID [2]
+  - DAS BOARD ID [1]
+  - DAS BOARD ID [0]
+  8:
+  - DAS 0 SWAP error
+  - DAS MODE error
+  - DAS BOARD ID [5]
+  - DAS BOARD ID [4]
+  9:
+  - not defined
+  - not defined
+  - not defined
+  - not defined
+  10:
+  - not defined
+  - not defined
+  - not defined
+  - not defined
+  11:
+  - not defined
+  - not defined
+  - not defined
+  - not defined
+  12:
+  - not defined
+  - not defined
+  - not defined
+  - not defined
+  13:
+  - not defined
+  - not defined
+  - not defined
+  - not defined
+  14:
+  - not defined
+  - not defined
+  - not defined
+  - not defined
+  15:
+  - not defined
+  - not defined
+  - not defined
+  - not defined
+  16:
+  - not defined
+  - not defined
+  - not defined
+  - not defined
+DD motor:
+  1:
+  - ! '9: AC loss detection (instantly)]'
+  - ! '2: abnormal hardware'
+  - ! '3: overvoltage error'
+  - ! '1: abnormal IPM'
+  2:
+  - ! '0: not defined (abnormal hardware'
+  - ! '119: abnormal hardware'
+  - ! '27,30: abnormal hardware'
+  - ! '10: abnormal hardware'
+  3:
+  - ! '17,18: abnormal hardware'
+  - ! '14: abnormal hardware'
+  - ! '120: absence of main power phase/incorrect phase'
+  - 41:abnormal hardware
+  4:
+  - ! '19,20: abnormal hardwqre'
+  - ! '35,36: abnormal hardware'
+  - ! '34: abnormal hardware'
+  - ! '32,33: abnormal hardware'
+  5:
+  - ! '7: overload error'
+  - ! '40: IPM overload error'
+  - ! '37: main voltage low error'
+  - ! '43,45,47,50 to 56,58,59: abnormal hardware'
+  6:
+  - ! '6: over-speed error'
+  - 48:abnormal hardware
+  - ! '0: not defined (abnormal hardware)'
+  - ! '0: not defined (abnormal hardware)'
+  7:
+  - ! '110: abnormal hardware'
+  - ! '11,111,113,114: abnormal hardware'
+  - ! '68 to 97,99 to 102: abnormal hardware'
+  - ! '13: excessive deviation'
+  8:
+  - ! '0: not defined (abnormal hardware)'
+  - ! '12,25,28,29,46: abnormal hardware'
+  - ! '49: servo control error'
+  - ! '115,117: abnormal hardware'
+  9:
+  - ! '57: serial communication error'
+  - ! '0: not defined (abnormal hardware)'
+  - ! '0: not defined (abnormal hardware)'
+  - ! '5: encoder error'
+  10:
+  - ! '0: not defined (abnormal hardware)'
+  - ! '0: not defined (abnormal hardware)'
+  - ! '0: not defined (abnormal hardware)'
+  - ! '0: not defined (abnormal hardware)'
+  11:
+  - ! '121: SFAN error'
+  - ! '0: not defined (abnormal hardware)'
+  - ! '0: not defined (abnormal hardware)'
+  - ! '105: magnetic pole sensing error'
+  12:
+  - ! '60 to 67: stored data error'
+  - ! '123: R command error'
+  - ! '44: positioning time exceeded'
+  - ! '122: incorrect servo on'
+  13:
+  - ! '106: speed error'
+  - ! '98: system data error'
+  - ! '107: Z-phase sensing error'
+  - ! '108: DMBC input error'
+  14:
+  - ! '125: magnetic pole sensing error'
+  - ! '118: main voltage low error'
+  - 15:deviation error warning
+  - ! '8: overload notice'
+  15:
+  - not defined
+  - not defined
+  - ! '127: SFAN2 error'
+  - 126:SFAN1 error
+  16:
+  - not defined
+  - not defined
+  - not defined
+  - not defined
+censor:
+  1:
+  - tape switch lower part rear of gantry
+  - tape switch lower part front of gantry
+  - tape switch upper part rear of gantry
+  - tape switch upper part front of gantry
+  2:
+  - tilt +limit
+  - not defined
+  - tilt +0
+  - tilt +position
+  3:
+  - tilt -limit
+  - not defined
+  - tilt -0
+  - not defined
+  4:
+  - not defined
+  - heigth0
+  - in1
+  - position detection sensor
+  5:
+  - auto stop
+  - heigth2
+  - heigth1
+  - up limit
+  6:
+  - in limit
+  - out1
+  - out limit
+  - down limit
+  7:
+  - not defined
+  - not defined
+  - not defined
+  - not defined
+  8:
+  - heigth20
+  - heigth15
+  - heigth20
+  - heigth5
+error:
+  1:
+  - OPCONTA error
+  - slit
+  - DAS mode
+  - wedge
+  2:
+  - horizontal couch movement 1
+  - gantry rotation
+  - gantry tilting
+  - external light projector
+  3:
+  - OPCONTA
+  - main
+  - DAS
+  - vertical movement of couch
+  4:
+  - GTS system
+  - not defined
+  - MUDAT
+  - not defined
+  5:
+  - not defined
+  - detector switching
+  - horizontal movement of couch 2
+  - not defined
+  6:
+  - not defined
+  - not defined
+  - not defined
+  - not defined
+  7:
+  - not defined
+  - not defined
+  - not defined
+  - not defined
+  8:
+  - not defined
+  - not defined
+  - not defined
+  - not defined
+slide:
+  1:
+  - Overload (AL16)
+  - Overcurrent (AL14)
+  - Overvoltage (AL12)
+  - Insufficient voltage (AL11)
+  2:
+  - Abnormal encoder connection (AL22)
+  - Abnormal encoder communication (AL21)
+  - Abnormal encoder AB phase (AL20)
+  - Short-time overload (AL18)
+  3:
+  - Command pulse sealer error (AL27)
+  - Acceleration protection (AL26)
+  - Gantry position deviation (AL24)
+  - Abnormal encoder communication (AL23)
+  4:
+  - Over-travel prevention (AL38)
+  - Abnormal EEPROM check code (AL37)
+  - Abnormal EEPROM parameter (AL36)
+  - Deviation counter overflow (AL29)
+  5:
+  - not defined
+  - not defined
+  - not defined
+  - Other abnormality (AL99)
+  6:
+  - not defined
+  - not defined
+  - not defined
+  - not defined
+  7:
+  - not defined
+  - not defined
+  - not defined
+  - not defined
+  8:
+  - not defined
+  - not defined
+  - not defined
+  - not defined
+heigth:
+  1:
+  - Overload (AL16)
+  - Overcurrent (AL14)
+  - Overvoltage (AL12)
+  - Insufficient voltage (AL11)
+  2:
+  - Abnormal encoder connection (AL22)
+  - Abnormal encoder communication (AL21)
+  - Abnoral encoder AB phase (AL20)
+  - Short-time overload (AL18)
+  3:
+  - Command pulse sealer error (AL27)
+  - Acceleration  protection (AL26)
+  - Gantry position deviation (AL24)
+  - Abnormal encoder communication (AL23)
+  4:
+  - Over-travel prevention (AL38)
+  - Abnormal EEPROM check code (AL37)
+  - Abnormal EEPROM parameter (AL36)
+  - Deviation counter overflow (AL29)
+  5:
+  - Brake relay malfunction
+  - SI2 communication CRC error
+  - Servo off
+  - Other abnormality (AL99)
+  6:
+  - Absolute encoder transmission data error
+  - Absolute encoder reception CRC error
+  - Absolute encoder timeout
+  - Absolute encoder count error
+  7:
+  - Limit error
+  - Skip error
+  - Over speed
+  - Absolute encoder reception data error
+  8:
+  - HEIGTH1 position error
+  - Compare error at activation
+  - Origin point adjustment not done
+  - ! '0: Position shift'
+  9:
+  - not defined
+  - not defined
+  - Motor brake relay malfunction
+  - Electromagnetic brake relay malfunction
+  10:
+  - not defined
+  - not defined
+  - not defined
+  - not defined
+  11:
+  - not defined
+  - not defined
+  - not defined
+  - not defined
+  12:
+  - not defined
+  - not defined
+  - not defined
+  - not defined

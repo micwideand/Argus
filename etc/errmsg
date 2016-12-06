@@ -1,0 +1,875 @@
+#Errcode Dlgtype  Mask       Error Message       
+
+$set 1			# SS Display Message
+1 00000001 00000000 00000000 : Table is free now. 
+1 00000002 00000000 00000000 : Localizer is lighting now. 
+1 00000003 00000000 00000000 : Couch is in local mode (GTS Local).
+1 00000004 00000000 00000000 : Door to exam room is open. Close door(s).
+0 00000005 00000000 00000000 : SS message #5.
+0 00000006 00000000 00000000 : SS message #6.
+0 00000007 00000000 00000000 : SS message #7.
+1 00000008 00000000 00000000 : Gantry tilted.
+0 00000009 00000000 00000000 : SS message #9.
+1 00000010 00000000 00000000 : Couch reached to its limit.\n
+			   : Can continue scanning, but slice positions are less precise.
+0 00000011 00000000 00000000 : SS message #11.
+1 00000012 00000000 00000000 : Couch is in local mode (GTS Local).
+1 00000013 00000000 00000000 : Door to exam room is open. Close door(s).
+1 00000014 00000000 00000000 : Couch is free now.
+1 00000015 00000000 00000000 : Localizer is lighting now.
+1 00000016 00000000 00000000 : Safety pressure switch on Gantry is ON.\n
+			   : Check for contact.
+0 00000017 00000000 00000000 : SS message #17.
+1 00000018 00000000 00000000 : Error occured in Gantry/Couch.\n
+			   : Scanogram is void now.\n
+			   : Re-register patient to make a new scanogram.
+0 00000019 00000000 00000000 : SS message #19.
+0 00000020 00000000 00000000 : SS message #20.
+0 00000021 00000000 00000000 : SS message #21.
+1 00000022 00000000 00000000 : Gantry in Service mode.\n
+			   : Maintenance panel of GTS is active now.
+1 00000023 00000000 00000000 : Abnormal status in gantry/couch system.\n
+			   : Initialization caused couch position fault.\n
+			   : Cannot use scanogram.
+1 00000024 00000000 00000000 : Could not catch up operation.\n
+			   : Be cool 
+0 00000025 00000000 00000000 : SS message #25.
+0 00000026 00000000 00000000 : SS message #26.
+0 00000027 00000000 00000000 : SS message #27.
+0 00000028 00000000 00000000 : SS message #28.
+0 00000029 00000000 00000000 : SS message #29.
+1 00000030 00000000 00000000 : Please push the hand switch to Ready ON(halfway).\n
+                           : --- Don't keep pushing for a long time. ---
+1 00000031 00000000 00000000 : Please push the hand switch to Ready ON(halfway) and hold it.
+1 00000032 00000000 00000000 : Please push the hand switch to Start ON(full push) to start scanning.\n
+                           : --- Don't keep pushing for a long time. ---
+1 00000033 00000000 00000000 : Please turn off the hand switch.
+1 00000034 00000000 00000000 : <<<<< Hand switch check >>>>>\n
+                           : Please turn off the hand switch.
+1 00000035 00000000 00000000 : <<<<< Hand switch check >>>>>\n
+                           : Please push the hand switch halfway(Ready).
+1 00000036 00000000 00000000 : <<<<< Hand switch check >>>>>\n
+                           : Please push the hand switch fully(Start).
+1 00000037 00000000 00000000 : <<<<< Hand switch check >>>>>\n
+                           : Please release the hand switch to OFF(Abort).
+
+$set 2			# Device SS
+
+1 807a1101 00000001 00000000 : Couch movement interrupted.
+1 80fc0000 00000001 0000FFFF : Warmup interrupted.\n
+			   : Restart Warmup again.
+0 807a1200 00000001 00000000 : Aborted Helical Scan.\n
+			   : Check Table position before resuming.
+0 808ab1e0 00000001 00000000 : The couch is shifted from the planned position.\n
+			   : Check the scan position.
+0 808ab1e5 00000001 00000000 : Scan setup was aborted because the tilt angle was changed.
+0 80aa0100 00000001 000000FF : The current couch position is different from that you originally planned.\n
+			     : Please check the couch position.
+0 80aa0200 00000001 000000FF : The current tilt position is different from that you originally planned.\n
+			     : Please check the tilt position.
+0 80aa0300 00000001 000000FF : Illegal Couch position.\n
+			     : Change Couch Mode to CT.
+0 80fa0310 00000001 00000000 : Time Out in Monitor Scan.
+0 80fa0320 00000001 00000000 : Time Out in Main Scan.
+0 80fa0330 00000001 0000000F : Time Out in Main Scan movement.
+1 801b0000 00000001 0000FFFF : The hand switch is not connected. 
+1 801c0000 00000001 0000FFFF : The gantry switch is not connected. 
+1 807b2000 00000001 00000FFF : The hand switch is abnormal. Contact your service representative.\n
+                           : It is possible to scan by turning off the hand switch mode of the eXam Plan. 
+1 807b1000 00000001 00000FFF : The hand switch is abnormal. Contact your service representative.
+1 807c1000 00000001 00000FFF : The gantry switch is abnormal. Contact your service representative.
+1 807c2000 00000001 00000FFF : The gantry switch is abnormal. Contact your service representative.\n
+                           : It is possible to scan by turning off the Gantry Switch mode of the eXam Plan. 
+1 809d0000 00000001 00000FFF : Couch movement cannot perform during PET acquisition.
+0 80ab1000 00000001 00000FFF : The hand switch diagnostics was completed.
+0 80ab2000 00000001 00000FFF : Please execute the hand switch diagnostics.
+0 80ab3000 00000001 00000FFF : The hand switch diagnostics was canceled halfway.
+1 80000000 00000001 0FFFFFFF : Error occured in Scan System.\n
+			   : Retry, or contact your service representative.
+1 90f10000 00000001 0000FFFF : Error occured in Scan System.\n
+			      : Retry, or reboot system.
+1 90000000 00000001 0FFFFFFF : Incorrect communication protocol between SM & SS.
+
+$set 3			# Device GTS
+A1 b1100000 00000011 0000FFFF : Error in GTS.\n
+			      : Contact your service representative.
+A1 b11a0000 00000011 0000FFFF : The CT fluoroscopy circuit is abnormal.\n
+			      : Contact your service representative.
+A1 b11b0000 00000011 0000FFFF : Error in GTS setting.\n
+			      : Contact your service representative.
+A1 b11c0000 00000011 0000FFFF : Error in GTS setting.\n
+			      : Contact your service representative.
+A1 b1270000 00000011 0000FFFF : Error in Table movement.\n
+			   : Contact your service representative.
+A1 b1300000 00000011 0000FFFF : Error in Wedge movement.\n
+			   : Contact your service representative.
+A1 b1320000 00000011 0000FFFF : Error in Slit movement.\n
+			   : Contact your service representative.
+A1 b1330000 00000011 0000FFFF : Error in BeamTrimmer movement.\n
+			   : Contact your service representative.
+A1 b1350000 00000011 0000FFFF : Error in Gantry Tilt.\n
+			   : Contact your service representative.
+A1 b1360000 00000011 00000FFF : Error in Gantry Rotation.\n
+			   : Contact your service representative.
+A1 b1361000 00000311 00000FFF : Error in Gantry Rotation.\n
+			   : Contact your service representative.
+A1 b1370000 00000011 0000FFFF : Table stopped in illegal position.\n
+			      : Manually correct table position, and continue scan.
+A1 b1380000 00000011 0000FFFF : Error in Couch movement(U/D).\n
+			   : Contact your service representative.
+1 b1381000 00000011 0000FFFF : An error is detected in the chain for moving the bed vertically.\n
+			   : Contact your service representative.
+A1 b1382000 00000011 0000FFFF : An error is detected in a signal from the motor for moving the bed vertically.\n
+			   : Contact your service representative.
+A1 b1383000 00000011 0000FFFF : An error is detected in the motor for moving the bed vertically.\n
+			   : Contact your service representative.
+A1 b1384000 00000011 0000FFFF : The bed moved in the opposite direction.\n
+			   : Contact your service representative.
+A1 b13a0000 00000011 0000FFFF : Error in GNS Main-task.\n
+			   : Contact your service representative.
+A1 b13b0000 00000011 0000FFFF : Error in GNS task.\n
+			   : Contact your service representative.
+A1 b13c0000 00000011 0000FFFF : Error in Couch lateral movement.\n
+			   : Contact your service representative.
+A1 b13d0000 00000011 0000FFFF : The couch is in abnormal status.\n
+			   : Contact your service representative.
+1 b13f0000 00000011 0000FFFF : Gantry is not powered ON.
+1 b1400000 00000011 0000FFFF : Patient touched the Gantry.\n
+			   : Check patient.
+1 b1420000 00000011 0000FFFF : Error in Gantry/Couch movement.\n
+			   : Check and Re-boot the system.
+0 b1500000 00000011 0000FFFF : Request rejected during Gantry/Couch movement.
+A1 b1520000 00000011 0000FFFF : An error was detected in controlling the vertical bed motion.\n
+			   : Please drop off the patient from the bed immediately and contact your service representative.
+0 b1530000 00000011 0000FFFF : Cannot start CT scan due to PET gantry not being at the parking position.
+1 b1600000 00000011 0000FFFF : Table stopped with interlock mechanism.
+
+1 b1630000 00000011 0000FFFF : Tilt reached +30 deg.
+1 b1640000 00000011 0000FFFF : Tilt reached -30 deg.
+1 b1650000 00000011 0000FFFF : Couch reached lowest position.
+1 b1660000 00000011 0000FFFF : Couch reached highest position.
+1 b1670000 00000011 0000FFFF : Table reached inner limit.
+1 b1680000 00000011 0000FFFF : Table reached outer limit.
+1 b1690000 00000011 0000FFFF : Cannot start a scan due to Ganty being positioned out of scan area.
+1 b16a0000 00000011 0000FFFF : Table reached rignt limit.
+1 b16b0000 00000011 0000FFFF : Table reached left limit.
+A1 b1810000 00000011 0000FFFF : Error in offset data Acquisition.\n
+			   : Retry Acquisition.
+0 b1930000 00000011 0000FFFF : Couch vertical movement is abnormal. Contact your service representative immediately. \n
+			      : Although couch vertical movement is possible at low speed.\n
+                           : Cannot control couch vertical movement from console.
+A1 b1940000 00000011 0000FFFF : One of the couch vertical movement brake relays has malfunctioned.\n
+			      : Although couch vertical movement is possible,\n
+			      : contact your service representative immediately.
+A0 b1950000 00000011 0000FFFF : The DAS fan is abnormal. Although scanning is possibel,\n
+			      : contact your service representative immediately.
+A0 b1960000 00000011 0000FFFF : The circuit for monitoring the PWB cooling fan in the gantry is abnormal.\n
+			      : Although scanning is possible, contact your service representative immediately.
+A0 b1970000 00000011 0000FFFF : The PWB cooling fan in the gantry is abnormal. Although scanning is possible,\n
+			      : contact your service representative immediately.
+A0 b19d0000 00000011 0000FFFF : Detected abnormal couch position. Contact your service representative immediately.\n
+			   : Couch can move with low speed manually. But CT and PET acquistions are not available.
+
+1 b1a00000 00000011 0000FFFF : Error in Gantry/Couch condition. Set them again.
+1 b1d00000 00000011 0000FFFF : Aborted Gantry/Couch movement by [ABORT] button.
+1 b1e00000 00000011 0000FFFF : Gantry/Couch in LOCAL mode.
+1 b1f00000 00000011 0000FFFF : Error in GTS ( Time Out ). Retry, or contact your service representative.
+1 b1f20000 00000011 0000FFFF : Error in Slit movement.\n
+			      : Retry, or contact your service representative.
+1 b1f30000 00000011 0000FFFF : Error in BeamTrimmer movement.\n
+			      : Retry, or contact your service representative.
+A0 b1980000 00000011 0000FFFF : The cooling fan used in data transfer system (1) is abnormal.\n
+			      : Although scanning is possible, contact your service representative.
+A0 b1990000 00000011 0000FFFF : Settings are abnormal in data transfer system (2). \n
+			      : Contact your service representative.
+A0 b19a0000 00000011 0000FFFF : One of the cooling fans used in data transfer system (2) is abnormal.\n
+			      : Although scanning is possible, contact your service representative.
+A0 b19b0000 00000011 0000FFFF : One of the gantry rotation control cooling fans is abnormal.\n
+			      : Although scanning is possible, contact your service representative immediately.
+A0 b19c0000 00000011 00000FFF : Couch lateral movement is abnormal.\n
+				  : Cannot control couch lateral movement from console.\n
+				  : Operate the couch from left area to the right \n
+				  : until couch lateral movement stops automatically.\n
+				  : If display of lateral position do not change to "00.0",\n
+				  : contact your service representative immediately.
+A0 b19c1000 00000011 00000FFF : The couch lateral position sensor has malfunctioned.\n
+				  : Although couch lateral movement is possible,\n
+				  : contact your service representative immediately.
+A0 b19c2000 00000011 00000FFF : Couch option settings are abnormal.\n
+				  : Correct Dip-SW settings on GTS.
+A0 b19c3000 00000011 00000FFF : The couch lateral movement brake relay has malfunctioned.\n
+				  : Although couch lateral movement is possible,\n
+				  : contact your service representative immediately.
+0 b1000000 00000011 00FFFFFF : Undefined Error.
+
+$set 4			# Device XC
+A1 b2100000 00000111 0000FFFF : Abnormal XC status.
+A1 b2200000 00000111 0000FFFF : Abnormal XC setting.
+A1 b2300000 00000111 0000FFFF : X-Ray condition prohibited.\n
+			   : Change scan condition.
+0 b2310000 00000111 0000FFFF : Door to exam room is open. Close door(s).
+1 b2500000 00000111 00000000 : Abnormal request to XC.
+1 b2500000 00000111 000FFFFF : Error in XC ( XC NACK )
+A1 b2600000 00000111 0000FFFF : X-ray OverCurrent.
+A1 b2610000 00000111 0000FFFF : Over KV.
+A0 b2620000 00000111 0000FFFF : Over mA.
+A1 b2630000 00000111 0000FFFF : Error in XC ( exposure time exceeded ).
+A1 b2640000 00000111 0000FFFF : Error in XC.
+1 b2a00000 00000111 0000FFFF : Incorrect X-Ray condition. Retry.
+0 b2d00000 00000111 0000FFFF : Aborted X-Ray by [ABORT] button.
+1 b2e00000 00000111 0000FFFF : XC is in LOCAL mode.
+1 b2f00000 00000111 0000FFFF : Error in XC ( time out ).
+A1 b2910000 00000011 0000FFFF : Arc occurred in previous scan.
+1 b2920000 00000111 0000FFFF : Scanning was aborted. ECG-Modulation signal is abnormal.\n
+			     : Contact your service representative.
+0 b2000000 00000011 00FFFFFF : Undefined error.
+
+$set 6			# Device Navipad
+1 b4100000 00000001 0000FFFF : Error in KeyBoard.\n
+			      : Contact your service representative.
+1 b4110000 00000001 0000FFFF : Error in communication between KeyBoard and SS.
+0 b4000000 00000001 00FFFFFF : Undefined error.
+
+$set 7			# Device ADI
+1 b5f00000 00000001 0000FFFF : Error in ADI ( time out ).\n
+			      : Retry, or contact your service representative.
+A1 b5300000 00000001 0000FFFF : Error in SS ( internal error ).\n
+			      : Contact your service representative.
+A1 b5100000 00000001 0000FFFF : Abnormal ADI status.\n
+			   : call service.
+0 b5000000 00000001 00FFFFFF : Undefined error.
+
+$set 8			# Device COM-PRE
+A1 b6200000 00000011 0000FFFF : Error in SS ( PRE).\n
+			   : Contact your service representative.
+1 b6300000 00000011 0000FFFF : Error in PRE.\n
+			   : Retry, or contact your service representative.
+A1 b6310000 00000011 0000FFFF : Error in transmitted channel number detected by GCIF.
+A1 b6320000 00000011 0000FFFF : Error in transmitted projection data number detected by GCIF.
+1 b6610000 00000011 0000FFFF : Error in PRE ( Low count ).
+1 b6620000 00000011 0000FFFF : Error ( offset data overflow ).
+1 b6f10000 00000011 0000FFFF : Error in Raw Data transmission.
+0 b6000000 00000011 00FFFFFF : Undefined error(8).
+
+$set 9			# Device MUDAT
+A1 b7100000 00000211 0000FFFF : The data transfer system in the gantry is abnormal.\n
+			      : Contact your service representative immediately.
+A1 b7100001 00000211 00000000 : Error in MUDAT (ROTSOT -1).
+A1 b7100002 00000211 00000000 : Error in MUDAT (ROTSOT -2).
+A1 b7100003 00000211 00000000 : Error in MUDAT (ROTSOT -3).
+A1 b7100004 00000211 00000000 : Error in switching channels inMUDAT.
+A1 b7100005 00000211 00000000 : Error in MUDAT ( ROTSOT -5).
+A1 b7100006 00000211 00000000 : Error in MUDAT.
+A1 b7100007 00000211 00000000 : Error in MUDAT ( ROTSOT -7).
+A1 b7100008 00000211 00000000 : Error in OPCONT2 ( DAS CLOCK count ).
+A1 b7100009 00000211 00000000 : Error in MUDAT ( ROTSOT -9).
+A1 b710000a 00000211 00000000 : Error in MUDAT (10).
+A1 b710000b 00000211 00000000 : Error in MUDAT ( ROTSOT -11).
+A1 b710000c 00000211 00000000 : Error in MUDAT (12).
+A1 b710000d 00000211 00000000 : Error in MUDAT ( ROTSOT -13).
+A1 b710000e 00000211 00000000 : Error in MUDAT (14).
+A1 b710000f 00000211 00000000 : Error in MUDAT ( ROTSOT -15).
+A1 b7210000 00000211 0000FFFF : The DAS setting is abnormal.\n
+			      : Contact your service representative immediately.
+A1 b7300000 00000211 0000FFFF : Data transfer between the control PWBs in the gantry is abnormal.\n
+			      : Contact your service representative immediately.
+A1 b7110001 00000211 00000000 : An error has occurred in data transfer system (2) during scanning.\n
+			      : Since the images may contain streak artifacts, confirm that there are no abnormalities in the images.
+A1 b7110002 00000211 00000000 : An error has occurred in data transfer system (1) during scanning.\n
+			      : Since the images may contain streak artifacts, confirm that there are no abnormalities in the images.
+A1 b7110004 00000211 00000000 : Error in switching channels inMUDAT.
+A1 b7110008 00000211 00000000 : Error in OPCONT2 ( DAS CLOCK count ).
+A1 b7120001 00000211 00000000 : An abnormality has occurred in data transfer system (1). \n
+			      : Contact your service representative.
+A1 b7220002 00000211 00000000 : Settings are abnormal in data transfer system (1). \n
+			      : Contact your service representative.
+A1 b7220004 00000211 00000000 : An abnormality has occurred in data transfer system (3). \n
+			      : Contact your service representative.
+A1 b7220008 00000211 00000000 : An abnormality has occurred in data transfer system (2). \n
+			      : Contact your service representative.
+0 b7000000 00000211 00FFFFFF : Undefined error(16).
+
+$set 10			# Device SYNC
+1 b8310000 00000011 0000FFFF : ECG-gating signal is abnormal.
+1 b8f10000 00000011 0000FFFF : ECG-gating signal is abnormal.
+1 b8320000 00000011 0000FFFF : Respiratory-gating signal is abnormal.
+1 b8f20000 00000011 0000FFFF : Respiratory-gating signal is abnormal.
+0 b8000000 00000011 00FFFFFF : Undefined error code (3).
+
+$set 12			# Device Imager
+0 ba000000 00000011 00FFFFFF : Undefined error code.
+
+$set 13			# Device LAMS
+0 bb008000 00000001 00000FFF : Error in LMHC.
+0 bb009000 00000001 00000FFF : Error in Marker Controller.
+0 bb00a000 00000001 00000FFF : Error in LMPP.
+0 bb000000 00000011 00FFFFFF : Undefined error code.
+
+$set 14			# Device OptionSIO0
+0 bc000000 00000011 00FFFFFF : Undefined error code.
+
+$set 15			# Device InjectorSync
+1 9d120000 00000001 0000FFFF : Injector is abnormal.\n
+			   : When you interrupt scan, please push [Abort] button on CT console.
+1 9d210000 00000001 0000FFFF : Injector is abnormal.\n
+			   : When you interrupt scan, please push [Abort] button on CT console.
+1 9d410000 00000001 0000FFFF : Injector is abnormal.\n
+			   : When you interrupt scan, please push [Abort] button on CT console.
+1 9d510000 00000001 0000FFFF : An error was returned from the injector.\n
+			   : Please confirm the injector status.
+1 9d610000 00000001 0000FFFF : Can not communicate with the injector.\n
+			   : Please confirm the injector status.
+1 bd110000 00000001 0000FFFF : Injector is abnormal.\n
+			   : When you interrupt scan, please push [Abort] button on CT console.
+1 bd210000 00000001 0000FFFF : Injector is abnormal.\n
+			   : When you interrupt scan, please push [Abort] button on CT console.
+1 bd310000 00000001 0000FFFF : Injector is abnormal.\n
+			   : When you interrupt scan, please push [Abort] button on CT console.
+1 bdf10000 00000001 0000FFFF : Injector is abnormal.\n
+			   : When you interrupt scan, please push [Abort] button on CT console.
+0 9d000000 00000001 00FFFFFF : Undefined error code.
+0 bd000000 00000001 00FFFFFF : Undefined error code.
+
+$set 16			# Device OptionSIO2
+0 be000000 00000011 00FFFFFF : Undefined error code.
+
+$set 20			# Device PIP
+A1 00000001 00000001 00000000 : Error in RECON unit (abnormal end).\n
+			   : Contact your service representative.
+A1 00000002 00000001 00000000 : Error in RECON unit (Time out).\n
+			   : Contact your service representative.
+A1 00000003 00000001 00000000 : Error in RECON unit (failed to start).\n
+			   : Contact your service representative.
+A1 00000004 00000001 00000000 : Reconstruction request was not qccepted.
+A1 00000005 00000001 00000000 : Error in RECON unit ( incorrect paramter set).
+A0 00000006 00000001 00000000 : An error occurred in the reconstruction sequence.
+0 00000007 00000001 00000000 : The image(s) was skipped during EGR because of collected condition.
+A0 00000008 00000001 00000000 : Inappropriate raw data was found.\n
+			   : Reconstruction was stopped.
+A0 00000009 00000001 00000000 : The image(s) was skipped during RGR because of collected condition.
+A0 00000010 00000001 00000000 : The image(s) was skipped because of collected condition.
+
+$set 30			# Device SHIF
+A1 80010001 00000001 00000000 : Error in SHIF (incorrect command).
+A1 80010002 00000001 00000000 : Error in SHIF (incorrect parameter).
+A1 80010003 00000001 00000000 : Error in SHIF (message queue overflow).
+1 80010004 00000001 00000000 : Command rejected ( non-ROM state now).
+1 80010005 00000001 00000000 : Command rejected ( non-RAM state now).
+1 80010006 00000001 00000000 : Error in SHIF (Memory pool full).
+1 8001000b 00000001 00000000 : Error in SHIF (missing data >0.5s).
+1 8001000e 00000001 00000000 : Aborted scan.
+1 8001000f 00000001 00000000 : Error in SHIF (pre-process collision).
+1 80010010 00000001 00000000 : Incorrect SCAN_CONFIG.
+1 80010011 00000001 00000000 : Disk Sector Table full.
+1 80010012 00000001 00000000 : Incorrect command sequence.
+A1 80010013 00000001 00000000 : Invalid extra data.
+0 80010000 00000001 0000FFFF : Undefined error code.
+
+$set 40			# Device RDD
+A1 80020001 00000001 00000000 : Error in RDD (command).
+A1 80020002 00000001 00000000 : Error in RDD (parameter set).
+A1 80020003 00000001 00000000 : Error in RDD (message queue overflow).
+1 80020004 00000001 00000000 : Command rejected ( non-ROM state now).
+1 80020005 00000001 00000000 : Command rejected ( non-RAM state now).
+1 80020006 00000001 00000000 : Error in RDD (Memory pool full).
+1 80020007 00000001 00000000 : RDD Busy (executing prev. command).
+1 80020008 00000001 00000000 : Error in RDD (No command running).
+A1 80020009 00000001 00000000 : Error in RDD drive. Contact your service representative.
+A1 8002000a 00000001 00000000 : Error in RDD HDC. Contact your service representative.
+A1 8002000b 00000001 00000000 : Error in RDD HDC (no response).\n
+			   : Contact your service representative.
+1 8002000d 00000001 00000000 : Selected error log not exist.
+0 80020000 00000001 0000FFFF : Undefined error code.
+
+
+$set 50			# Device DSS
+0 00000000 00000001 FFFFFFFF : Error in DSS.
+
+$set 60			# Device FSYS
+1 000001d2 00000001 00000000 : Exceeded max. images in an exam.
+1 000001f7 00000001 00000000 : Exceeded max. exams in Database.
+1 000001f8 00000001 00000000 : Database full ( Image ).
+1 0000025a 00000001 00000000 : Exceeded max. exams in Database.
+0 00000263 00000001 00000000 : The system can not store the image, because Display console is not ready.\n
+			      : Please wait until Display console is ready.
+A0 00000000 00000001 FFFFFFFF : Error in FSYS.
+
+$set 70			# Device RSYS
+1 000001d2 00000001 00000000 : Exceeded max. raws in an exam.
+1 000001f7 00000001 00000000 : Exceeded max. exams in Database (Raw Data).
+A1 000001f8 00000001 00000000 : Database full ( Raw Data ).
+A0 00000000 00000001 FFFFFFFF : Error in RSYS.
+
+$set 80			# Device APPL
+1 00000001 00000001 00000000 : Reconstruction queue FULL.
+1 00000002 00000001 00000000 : Error in system software. Manualy restart Reconstruction queue.
+1 00000003 00000001 00000000 : Error in system software. Manualy delete Reconstruction queue.
+0 00000004 00000001 00000000 : Aborted Helical Scan.\n
+			   : Check Table position before resuming.
+0 00000005 00000001 00000000 : Aborted Stack Scan.\n
+			   : Check Table position before resuming.
+1 00000006 00000001 00000000 : Error in AutoImageTransfer.
+1 00000007 00000001 00000000 : Error in AutoImageTransfer.\n
+			   : Manualy restart reconstruction queue.
+1 00000008 00000001 00000000 : Deleted reconstruction request(outside available area).
+0 00000009 00000001 00000000 : Aborted Helical Scan.\n
+			   : Check Table position before resuming.\n
+			   : To start scanning from another position than previously planned.\n
+			   : cancel RealEC.
+0 0000000a 00000001 00000000 : Check whether or not the intended scan start time and the interval time are set.
+A0 0000000b 00000001 00000000 : A system error was detected(the FC is abnormal).\n
+			   : Scanning is interrupted.\n
+			   : Execution of the eXam Plan cannot be continued.\n
+			   : Shut down the system and start it up again.
+0 0000000c 00000001 00000000 : The selected scan cannot be performed because the gantry is tilted.
+0 0000000d 00000001 00000000 : Failed to transfer a scan condition.
+1 0000000e 00000001 00000000 : Cannot boot up the system completely.\n
+			   : Shut down the system and start it up again.
+0 0000000f 00000001 00000000 : Abnormal ECG data was found.\n
+			   : Please delete the corresponding request from the reconstruction queue \n
+			   : and re-try reconstruction with conventional method
+0 00000010 00000001 00000000 : The communication error occurred by the data transfer unit in the gantry,\n
+			      : and raw data was corrected.
+A1 00000011 00000001 00000000 : Error in Image data disk (IDD-HDD).\n
+			   : Contact your service representative.
+A1 00000012 00000001 00000000 : Error in Image data disk (IDD-FAN).\n
+			   : Contact your service representative.
+A1 00000013 00000001 00000000 : Error in Image data disk (IDD-power source).\n
+			   : Contact your service representative.
+A1 00000014 00000001 00000000 : Error in Image data disk (IDD-battery).\n
+			   : Contact your service representative.
+1 00000015 00000001 00000000 : Database full ( Volume ).
+1 00000016 00000001 00000000 : ECG-Modulation signal was not detected correctly.\n
+			     : Heart rate or ECG waveform of the patient may be distorted during scanning.\n
+			     : If it occurs frequently, contact your service representative.
+1 00000017 00000001 00000000 : An abnormal scan condition was found.\n
+			     : Please restart the exam plan.
+1 00000018 00000001 00000000 : Failed to store the scanned image.\n
+			     : Please reset the system.
+1 00000019 00000001 00000000 : PhaseXact could not automatically find a good diastolic phase.\n
+			     : Images will be reconstructed at ARGV1.\n
+			     : Please use ImageXact for optimal phase reconstruction.
+1 0000001a 00000001 00000000 : PhaseXact could not automatically find a good systolic phase.\n
+			     : Please use ImageXact for optimal phase reconstruction.
+1 0000001b 00000001 00000000 : PhaseXact could not automatically find a good "best phase".\n
+			     : Images will be reconstructed at ARGV1.\n
+			     : Please use ImageXact for optimal phase reconstruction.
+1 0000001c 00000001 00000000 : The motion map could not be generated.\n
+			     : Please delete the corresponding request from the reconstruction queue.
+1 0000001d 00000001 00000000 : XY-Modulation signal is abnormal.\n
+			      : Contact your service representative.
+1 0000001e 00000001 00000000 : PhaseXact could not automatically find a good systolic or diastolic phase.\n
+			     : Images will be reconstructed at ARGV1.\n
+			     : Please use ImageXact for optimal phase reconstruction.
+1 0000001f 00000001 00000000 : Please wait until Scan console is ready.
+1 00000020 00000001 00000000 : PhaseXact could not automatically find a good diastolic phase.\n
+			     : Please use ImageXact for optimal phase reconstruction.
+1 00000021 00000001 00000000 : PhaseXact could not automatically find a good "best phase".\n
+			     : Please use ImageXact for optimal phase reconstruction.
+1 00000022 00000001 00000000 : PhaseXact could not automatically find a good systolic or diastolic phase.\n
+			     : Please use ImageXact for optimal phase reconstruction.
+2 00000023 00000001 00000000 : The couch speed for CT fluoroscopy was not set properly.\n
+			     : Please confirm the current speed.
+A1 00000024 00000001 00000000 : Error in image data storage (IDD).\n
+			   : (Call Service to restore data redundancy. Click OK to resume operation.)
+
+0 80000000 00000001 0F0FFFFF : Syste call error.
+0 80000001 00000001 0FFFFF00 : Memory is not enough.
+0 80000002 00000001 0FFFFF00 : This parameter is wrong.
+0 80000003 00000001 0FFFFF00 : Cannot send to the CTport. (timeout)
+0 80000004 00000001 0FFFFF00 : Cannot receive from the CTport. (timeout)
+0 80000005 00000001 0FFFFF00 : Cannot send to the CTport.
+0 80000006 00000001 0FFFFF00 : Cannot receive from the CTport.
+0 80000007 00000001 0FFFFF00 : Transferring queue is overflowed. 
+0 80000008 00000001 0FFFFF00 : Sheet data can not join a queue.
+0 80000009 00000001 0FFFFF00 : MLC data can not join a queue.
+0 8000000a 00000001 0FFFFF00 : Sheet data cannot changes to printing data. 
+0 8000000b 00000001 0FFFFF00 : MLC data cannot changes to transferring data.
+0 8000000c 00000001 0FFFFF00 : Sheet of treatment field can not print.
+0 8000000d 00000001 0FFFFF00 : MLC data can not sends to server.
+0 9000000f 00000001 0FFFFF00 : Localizer is tilted. 
+0 90000010 00000001 0FFFFF00 : Gantry tilted.
+0 90000011 00000001 0FFFFF00 : The table height is diffarent as compared with scanning it.
+0 90000012 00000001 0FFFFF00 : GTS is resetting now.
+0 90000013 00000001 0FFFFF00 : During marking.
+0 90000014 00000001 0FFFFF00 : Cannot marking during scanning.
+0 80000015 00000001 0FFFFF00 : It necesaary setup in CTport side if request from Anet or D-Console.
+0 90000016 00000001 0FFFFF00 : Tabel slide is moving.
+0 90000017 00000001 0FFFFF00 : Table height is moving.
+0 90000018 00000001 0FFFFF00 : GTS tilt is moving.
+0 9000001a 00000001 0FFFFF00 : Laser Marker System is not ready.
+0 8000001b 00000001 0FFFFF00 : Cannot connect to the SS/ADI.
+1 00800024 00000001 00000000 : No license. this optional function cannot be used.
+1 00800025 00000001 00000000 : The trial priod for this optional function has ended.
+A1 00800026 00000001 00000000 : The hardwere key for a license check has not been recognized.\n
+                             : Please contact service engineer.
+0 0000002c 00000001 00000000 : Abnormal ECG data was found.\n
+			   : Please delete the corresponding request from the reconstruction queue \n
+			   : and re-try reconstruction with conventional method
+0 0000002d 00000001 00000000 : Abnormal RGR data was found.\n
+			   : Please delete the corresponding request from the reconstruction queue \n
+			   : and re-try reconstruction with conventional method
+1 0000002e 00000001 00000000 : The expected number of beat(s) has not been scanned. The planned reconstruction could not be performed.\n
+			   : Delete the reconstruction queue and retry reconstruction.
+A0 0000002f 00000001 00000000 : The cooling fan used in the console is abnormal. Although scanning is possible.\n
+			   : Contact your service representative.
+A1 00000030 00000001 00000000 : The cooling fan used in the console is abnormal.\n
+			   : Contact your service representative immediately.
+A1 00000031 00000001 00000000 : The couch position has been changed.\n
+			   : Please restart the PET acquisition.
+A1 00000032 00000001 00000000 : Abnormal status in PET system.
+A1 00000033 00000001 00000000 : An error occurred in SS ( PETACQSTATE ).
+A0 00000034 00000001 00000000 : The memory used in the console is abnormal. Although scanning is possible.\n
+			   : Contact your service representative.
+A1 00000035 00000001 00000000 : The memory used in the console is abnormal.\n
+			   : Contact your service representative immediately.
+A0 00000036 00000001 00000000 : The temperature in the console is abnormal. Although scanning is possible.\n
+			   : Contact your service representative.
+A1 00000037 00000001 00000000 : The temperature in the console is abnormal.\n
+			   : Contact your service representative immediately.
+A0 00000038 00000001 00000000 : Error in image data disk (PC).\n
+			   : (Call Service to restore data redundancy. Click OK to resume operation.)
+A1 00000039 00000001 00000000 : Error in image data disk (PC).\n
+			   : Contact your service representative.
+A0 00000040 00000001 00000000 : Error in system disk (PC).\n
+			   : (Call Service to restore data redundancy. Click OK to resume operation.)
+A1 00000041 00000001 00000000 : Error in system disk (PC).\n
+			   : Contact your service representative.
+A0 00000042 00000001 00000000 : The reconstruction unit is abnormal. Although scanning is possible.\n
+			   : Contact your service representative.
+A1 00000043 00000001 00000000 : The reconstruction unit is abnormal.\n
+			   : Contact your service representative immediately.
+A1 A0000000 00000001 00FFFFFF : An error occurred in the PET system.\n
+			   : Please call Toshiba service engineer.
+A1 A1000000 00000001 00FFFFFF : The POST-Test error occurred in the PET system.\n
+			   : Please call Toshiba service engineer.
+A1 A2000000 00000001 00FFFFFF : The DAS-Monitor error occurred in the PET system.\n
+			   : Please call Toshiba service engineer.
+A1 A3000000 00000001 00FFFFFF : The RDD error occurred in the PET system.\n
+			   : Please call Toshiba service engineer.
+A1 A4000000 00000001 00FFFFFF : The Infiniband error occurred in the PET system.\n
+			   : Please call Toshiba service engineer.
+A1 A5000000 00000001 00FFFFFF : The Recon-Server error occurred in the PET system.\n
+			   : Please call Toshiba service engineer.
+A1 B0000000 00000001 00FFFFFF : Abnormal status in PET system.
+A1 C0000000 00000001 00FFFFFF : An error occurred in SS ( PETACQSTATE ).
+
+$set 100		# Device RTM PRE
+A1 C0010001 10000001 00000000 : Error in pre-process.\n
+			   : (sequence error)
+A1 40010002 10000001 00000000 : Error in pre-process.\n
+			   : (timeout before collecting all projection data)
+A1 C0010003 10000001 00000000 : Error in pre-process.\n
+			   : (buffer overflow)
+A1 C0010004 10000001 00000000 : Error in pre-process.\n
+			   : (illegal tube position)
+A1 C0010005 10000001 00000000 : Error in pre-process.\n
+			   : (bad integ. in raw data)
+A1 C0010006 10000001 00000000 : Error in pre-process.\n
+			   : (FIFO overrun)
+A1 C0010007 10000001 00000000 : Error in pre-process.\n
+			   : (misaligned or missing extra data)
+A1 C0010008 10000001 00000000 : Error in pre-process.\n
+			   : (unknown SHARC command received)
+A1 C0010009 10000001 00000000 : Error in pre-process.\n
+			   : (failed communicate to recon. task)
+A1 C001000A 10000001 00000000 : Error in pre-process.\n
+			   : (FILE_INFO is short)
+A1 C001000B 10000001 00000000 : Error in pre-process.\n
+			   : (PreMgr obtained more data than the number of specification projection)
+A1 C001000C 10000001 00000000 : Error in pre-process.\n
+			   : (Too many parrity errors detected in 64 projections of data)
+A1 4001000D 10000001 80000000 : Error in pre-process.\n
+			   : (A few parity errors detected in 64 projections of data)
+A1 C001000E 10000001 00000000 : Error in pre-process.\n
+			   : (Failed to load sharc code to DTB board)
+A1 C001000F 10000001 00000000 : Error in pre-process.\n
+			   : (Failed to load sharc code to PRE board.)
+A1 C0010010 10000001 00000000 : Error in pre-process.\n
+			   : (Firmwares not downloaded)
+A1 C0010011 10000001 00000000 : Error in pre-process.\n
+			   : (Too many views for offset scan)
+A1 C0010012 10000001 00000000 : Error in pre-process.\n
+			   : (A bad parameter was sent to pre task)
+A1 C0010013 10000001 00000000 : Error in pre-process.\n
+			   : (A bad message was sent to pre task)
+A0 C0010014 10000001 00000000 : Error in pre-process.\n
+			   : (Gantry disconnected during scan)
+A0 C0010015 10000001 00000000 : Error in pre-process.\n
+			   : (Buffer overflow on PRE board.)
+A0 00000000 10000001 FFFFFFFF : Error in PRE
+
+$set 101		# Device RTM REC
+A1 C0020001 10000001 00000000 : Error in recon-process.\n
+			   : (initialize error)
+A1 C0020002 10000001 00000000 : Error in recon-process.\n
+			   : (ISR attching error)
+A1 C0020003 10000001 00000000 : Error in recon-process.\n
+			   : (MARS-board busy)
+A1 C0020004 10000001 00000000 : Error in recon-process.\n
+			   : (recon-queue full)
+A1 C0020005 10000001 00000000 : Error in recon-process.\n
+			   : (Firmwares not loaded)
+A1 C0020006 10000001 0000FF00 : Error in recon-process.\n
+			   : (Timeout before QUEUE reconstruction completed)
+A0 00000000 10000001 FFFFFFFF : Error in REC
+
+$set 102		# Device RTM RDD
+A1 C0030001 10000001 00000000 : Error in RDD.\n
+			   : (Memory allocation error,software problem)
+A1 C0030002 10000001 00000000 : Error in RDD.\n
+			   : (Disk writes error)
+A1 C0030003 10000001 00000000 : Error in RDD.\n
+			   : (Disk read error)
+A1 C0030004 10000001 00000000 : Error in RDD.\n
+			   : (Disk error form some command)
+A1 C0030005 10000001 00000000 : Error in RDD.\n
+			   : (RAID configuration error or may be broken disk)
+A1 C0030006 10000001 00000000 : Error in RDD.\n
+			   : (Bad parameter in command sent to RDD.)
+A1 C0030007 10000001 00000000 : Error in RDD.\n
+			   : (RDD receiving a command at the wrong time.)
+A1 C0030008 10000001 00000000 : Error in RDD.\n
+			   : (Firmwares not downloaded,specifically RAID_CONFIG is missing.)
+A1 C0030009 10000001 00000000 : Error in RDD.\n
+			   : (Not enough good disks for RAID to function.)
+A1 C003000A 10000001 00000000 : Error in RDD.\n
+			   : (RAID cannot run with disks of different types)
+A1 4003000B 10000001 80000000 : Error in raw data storage (RDD).\n
+			   : (Call Service to restore data redundancy. Click OK to resume operation.)
+A1 C003000C 10000001 00000000 : Error in RDD.\n
+			   : (Internal RDD queue error.)
+A1 C003000D 10000001 00000000 : Error in RDD.\n
+			   : (Bab disk detected when configuring RAID.)
+A1 C003000E 10000001 00000000 : Error in raw data storage (RDD).\n
+			   : (Click OK to resume operation.)
+A0 00000000 10000001 FFFFFFFF : Error in RDD
+
+$set 103		# Device RTM ISP
+A1 C0040001 10000001 00000000 : Error in data xfer to HOST, RTM.\n
+			   : (Fibre Channel may be broken)
+A1 C0040002 10000001 00000000 : Error in Fibre channel.\n
+			   : (Memory allocation error,software problem)
+A1 C0040003 10000001 00000000 : Error in DTB.\n
+			   : (Error setting up in the board. DTB may be broken)
+A1 C0040004 10000001 00000000 : Error in DTB.\n
+			   : (Cannot initialize in the board. DTB may be broken)
+A1 40040005 10000001 80000000 : Error in Fibre channel.\n
+			   : (Missing device from Fibre Channel loop. DTB or FC-cable may be broken)
+A0 00000000 10000001 FFFFFFFF : Error in ISP
+
+$set 104		# Device RTM ELCTL
+A0 C0900001 10000001 00000000 : Error in pre-process.\n
+			   : (no responce to pre-process condition setup)
+A0 C0900002 10000001 00000000 : Error in pre-process.\n
+			   : (no responce of pre-process completion)
+A0 C0900003 10000001 00000000 : Error in pre-process.\n
+			   : (no responce to pre-process aborting)
+A0 C0900004 10000001 00000000 : Error in recon-process.\n
+			   : (no responce to a real-time reconstruction setup.)
+A0 C0900005 10000001 00000000 : Error in recon-process.\n
+			   : (no responce S&V reconstruction.)
+A0 C0900006 10000001 00000000 : Error in recon-process.\n
+			   : (no responce to ROI setup.)
+A0 C0900007 10000001 00000000 : Error in recon-process.\n
+			   : (no responce to recon-process aborting)
+A0 C0900010 00000001 00000000 : An abnormal scan condition was found.\n
+			   :  Please restart the exam plan.
+A0 C0900011 00000001 00000000 : An abnormal scan condition was found.\n
+			   : Please restart the exam plan.
+A0 C0900012 00000001 00000000 : An abnormal scan condition was found.\n
+			   : Please restart the exam plan.
+A0 C0900013 00000001 00000000 : An abnormal scan condition was found.\n
+			   : Please restart the exam plan.
+A0 00000000 10000001 FFFFFFFF : Error in ELCTL
+
+$set 105		# Device RTM rRecCtl
+A0 C0830001 10000001 00000000 : Error in recon-process.\n
+			   : (no responce of real-time reconstruction.)
+A0 C0830002 10000001 00000000 : Error in recon-process.\n
+			   : (no responce of S&V reconstruction.)
+A0 C0830003 10000001 00000000 : Error in recon-process.\n
+			   : (no responce to Play&Reverse reconstruction condition setup.)
+A0 C0830004 10000001 00000000 : Error in recon-process.\n
+			   : (no responce to queue reconstruction environmental setup.)
+A0 C0830005 10000001 00000000 : Error in recon-process.\n
+			   : (no responce to queue reconstruction condition setup.)
+A0 C0830006 10000001 00000000 : Error in recon-process.\n
+			   : (no responce of queue reconstruction completion.)
+A0 C0830011 10000001 00000000 : An error occurred in reconstruction processing.\n
+			   : Images are reconstructed for an inappropriate area.
+A0 C0830012 10000001 00000000 : An error occurred in reconstruction processing.\n
+			   : Mismatch between the reconstruction request and reconstruction completion occurred.
+A0 C0830013 10000001 00000000 : An error occurred in reconstruction processing.\n
+			   : A reconstruction sequence error occurred.
+A0 00000000 10000001 FFFFFFFF : Error in rRecCtl
+
+$set 200   # Device RTM PRE for Genesis
+A1 9C030000 10000001 0000FFFF : Error in pre-process.\n
+			   : (sequence error)
+A1 1C040000 10000001 0000FFFF : Error in pre-process.\n
+			   : (timeout before collecting all projection data)
+A1 9C050000 10000001 0000FFFF : Error in pre-process.\n
+			   : (buffer overflow)
+A1 9C060000 10000001 0000FFFF : Error in pre-process.\n
+			   : (FILE_INFO is short)
+A1 9C070000 10000001 0000FFFF : Error in pre-process.\n
+			   : (PreMgr obtained more data than the number of specification projection)
+A1 9C080000 10000001 0000FFFF : Error in pre-process.\n
+			   : (A bad parameter was sent to pre task)
+A1 9D030000 10000001 0000FFFF : Error in pre-process.\n
+			   : (Too many views for offset scan)
+A1 9D040000 10000001 0000FFFF : Error in pre-process.\n
+			   : (misaligned or missing extra data)
+A1 9D070000 10000001 0000FFFF : Error in pre-process.\n
+			   : (illegal tube position)
+A1 9E070000 10000001 0000FFFF : Error in pre-process.\n
+			   : (FIFO overrun)
+A1 9C090000 10000001 0000FFFF : Error in pre-process.\n
+			   : (Communication error)
+A1 9C0A0000 10000001 0000FFFF : Error in pre-process.\n
+			   : (Configuration aborted)
+A1 9C0B0000 10000001 0000FFFF : Error in pre-process.\n
+			   : (Could not allocate dynamic memory)
+A1 9D050000 10000001 0000FFFF : Error in pre-process.\n
+			   : (Buffer allocation failed)
+A1 9D060000 10000001 0000FFFF : Error in pre-process.\n
+			   : (Internal state error)
+A1 9D080000 10000001 0000FFFF : Error in pre-process.\n
+			   : (Bad Segment Number detected)
+A1 9E030000 10000001 0000FFFF : Error in pre-process.\n
+			   : (SCST detected a CRC error)
+A1 9E040000 10000001 0000FFFF : Error in pre-process.\n
+			   : (SCST is not responding)
+A1 9E050000 10000001 0000FFFF : Error in pre-process.\n
+			   : (SCST received too many Buffer Ready messages)
+A1 9E060000 10000001 0000FFFF : Error in pre-process.\n
+			   : (SCST received unknown message)
+A1 9E080000 10000001 0000FFFF : Error in pre-process.\n
+			   : (SCST detected that LVDS channels are out of sync)
+A1 9E090000 10000001 0000FFFF : Error in pre-process.\n
+			   : (Data from scanner had bad segment number value)
+A1 9E0A0000 10000001 0000FFFF : Error in pre-process.\n
+			   : (Data from scanner Sequence error)
+A1 9E0B0000 10000001 0000FFFF : Error in pre-process.\n
+			   : (Data from scanner Clock Error)
+A0 00000000 10000001 FFFFFFFF : Error in PRE
+    
+$set 201   # Device RTM REC for Genesis
+A1 A6030000 10000001 0000FFFF : Error in recon-process.\n
+			   : (initialize error)
+A1 A6040000 10000001 0000FFFF : Error in recon-process.\n
+			   : (ScanID check failed)
+A1 A6050000 10000001 0000FFFF : Error in recon-process.\n
+			   : (unable to access view data file)
+A1 A6060000 10000001  0000FFFF : Error in recon-process.\n
+			   : (Invalid parameters)
+A1 A6070000 10000001 0000FFFF : Error in recon-process.\n
+			   : (Table access failure)
+A1 A6080000 10000001 0000FFFF : Error in recon-process.\n
+			   : (Invalid internal state)
+A1 A6090000 10000001 0000FFFF : Error in recon-process.\n
+			   : (Too many entries in table update queue)
+A1 A60A0000 10000001 0000FFFF : Error in recon-process.\n
+			   : (CMD_ERROR msg with OK status)
+A1 A60B0000 10000001 0000FFFF : Error in recon-process.\n
+			   : (An end data msg)
+A1 A60C0000 10000001 0000FFFF : Error in recon-process.\n
+			   : (Bad IDD location information)
+A1 A60D0000 10000001 0000FFFF : Error in recon-process.\n
+			   : (Internal state inconsistency)
+A1 A60E0000 10000001 0000FFFF : Error in recon-process.\n
+			   : (Memory allocation failure)
+A1 A60F0000 10000001 0000FFFF : Error in recon-process.\n
+			   : (Unable to process request due to previous error)
+A0 00000000 10000001 FFFFFFFF : Error in REC
+
+$set 202   # Device RTM RDD for Genesis
+A1 9F030000 10000001 0000FFFF : Error in RDD.\n
+			   : (Memory allocation error,software problem)
+A1 9F040000 10000001 0000FFFF : Error in RDD.\n
+			   : (Disk writes error)
+A1 9F050000 10000001 0000FFFF : Error in RDD.\n
+			   : (Disk read error)
+A1 9F060000 10000001 0000FFFF : Error in RDD.\n
+			   : (Disk error form some command)
+A1 9F070000 10000001 0000FFFF : Error in RDD.\n
+			   : (RAID configuration error or may be broken disk)
+A1 9F080000 10000001 0000FFFF : Error in RDD.\n
+			   : (Bad parameter in command sent to RDD.)
+A1 9F090000 10000001 0000FFFF : Error in RDD.\n
+			   : (RDD receiving a command at the wrong time.)
+A1 9F0A0000 10000001 0000FFFF : Error in RDD.\n
+			   : (RAID configuration files are not downloaded.)
+A1 9F0B0000 10000001 0000FFFF : Error in RDD.\n
+			   : (Not enough good disks for RAID to function.)
+A1 9F0C0000 10000001 0000FFFF : Error in RDD.\n
+			   : (RAID cannot run with disks of different types)
+A1 1F0D0000 10000001 0000FFFF : Error in RDD.\n
+			   : (RAID is did not pass PREP. No disk trasfer is allowed.)
+A1 9F0E0000 10000001 0000FFFF : Error in RDD.\n
+			   : (Internal RDD queue error.)
+A1 9F0F0000 10000001 0000FFFF : Error in RDD.\n
+			   : (Bab disk detected when configuring RAID.)
+A1 9F100000 10000001 0000FFFF : Error in RDD.\n
+			   : (Some maintenance is required for the RDD.)
+A0 00000000 10000001 FFFFFFFF : Error in RDD
+    
+$set 203   # Device RTM ELCTL for Genesis
+A0 FC010000 10000001 00000000 : Error in pre-process.\n
+			   : (no responce to pre-process condition setup)
+A0 FC020000 10000001 00000000 : Error in pre-process.\n
+			   : (no responce of pre-process completion)
+A0 FC030000 10000001 00000000 : Error in pre-process.\n
+			   : (no responce to pre-process aborting)
+A0 FC040000 10000001 00000000 : Error in recon-process.\n
+			   : (no responce to a real-time reconstruction setup.)
+A0 FC050000 10000001 00000000 : Error in recon-process.\n
+			   : (no responce S&V reconstruction.)
+A0 FC060000 10000001 00000000 : Error in recon-process.\n
+			   : (no responce to ROI setup.)
+A0 FC070000 10000001 00000000 : Error in recon-process.\n
+			   : (no responce to recon-process aborting)
+A0 FC100000 00000001 00000000 : An abnormal scan condition was found.\n
+			   : Please restart the exam plan.
+A0 FC110000 00000001 00000000 : An abnormal scan condition was found.\n
+			   : Please restart the exam plan.
+A0 FC120000 00000001 00000000 : An abnormal scan condition was found.\n
+			   : Please restart the exam plan.
+A0 FC130000 00000001 00000000 : An abnormal scan condition was found.\n
+			   : Please restart the exam plan.
+A0 FC150000 00000001 00000000 : The scanning was continued without real-time reconstruction,\n
+			   : because abnormality of the real-time reconstruction was detected while scanning.
+A0 00000000 10000001 FFFFFFFF : Error in ELCTL
+
+$set 204   # Device RTM rRecCtl for Genesis
+A0 FD010000 10000001 00000000 : Error in recon-process.\n
+			   : (no responce of real-time reconstruction.)
+A0 FD020000 10000001 00000000 : Error in recon-process.\n
+			   : (no responce of S&V reconstruction.)
+A0 FD030000 10000001 00000000 : Error in recon-process.\n
+			   : (no responce to Play&Reverse reconstruction condition setup.)
+A0 FD040000 10000001 00000000 : Error in recon-process.\n
+			   : (no responce to queue reconstruction environmental setup.)
+A0 FD050000 10000001 00000000 : Error in recon-process.\n
+			   : (no responce to queue reconstruction condition setup.)
+A0 FD060000 10000001 00000000 : Error in recon-process.\n
+			   : (no responce of queue reconstruction completion.)
+A0 FD110000 10000001 00000000 : An error occurred in reconstruction processing.\n
+			   : Images are reconstructed for an inappropriate area.
+A0 FD120000 10000001 00000000 : An error occurred in reconstruction processing.\n
+			   : Mismatch between the reconstruction request and reconstruction completion occurred.
+A0 FD130000 10000001 00000000 : An error occurred in reconstruction processing.\n
+			   : A reconstruction sequence error occurred.
+A0 00000000 10000001 FFFFFFFF : Error in rRecCtl
+    
+$set 205   # RTM Infra for Genesis
+A1 00000000 10000001 FFFFFFFF : Error in RTM
+    
+$set 206   # RTM SS driver or SS proxy
+A1 00000000 10000001 FFFFFFFF : Error in RTM
+
+$set 99			# Comment Message
+*1 XC is resetting now.\n
+
+

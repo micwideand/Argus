@@ -1,0 +1,43 @@
+---
+None:
+- dflt
+- xc2
+Aquilion ONE:
+- one
+- xc3
+Aquilion PRIME:
+- prime
+- xc2
+Aquilion CXL:
+- cxl
+- xc2
+Aquilion RXL:
+- rxl
+- xc2
+Alexion:
+- alex
+- xc
+Aquilion 32/64 SURECOM/Spellman till 4.6:
+- 64s
+- xc
+Aquilion 32/64 SURECOM/Spellman from 4.6:
+- 64snew
+- xc2
+Aquilion 32/64 mudat/sru:
+- 64l
+- xc_sru
+Aquilion S16:
+- s16
+- xc_sru
+Aquilion LB:
+- lb
+- xc
+Aquilion LB MUDAT/SRU:
+- lbl
+- xc_sru
+Activion:
+- acti
+- xc2
+Asteion S4:
+- s4
+- xc

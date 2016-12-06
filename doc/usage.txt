@@ -1,0 +1,24 @@
+ARGUS 0.0.2 is a standalone project developped in my spare time.
+Hope you'll get some kicks out of it.  Willem Michiels
+
+USAGE: argus cttype full
+
+	cttype is one of the following:
+
+		dflt	None
+		one	Aquilion ONE
+		prime	Aquilion PRIME
+		cxl	Aquilion CXL
+		rxl	Aquilion RXL
+		alex	Alexion
+		64s	Aquilion 32/64 SURECOM/Spellman till 4.6
+		64snew	Aquilion 32/64 SURECOM/Spellman from 4.6
+		64l	Aquilion 32/64 mudat/sru
+		s16	Aquilion S16
+		lb	Aquilion LB
+		lbl	Aquilion LB MUDAT/SRU
+		acti	Activion
+		s4	Asteion S4
+
+	full 	is an optional feature and will keep more information such as
+		scan parameters, recon parameters, couch movement.

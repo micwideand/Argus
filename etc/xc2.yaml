@@ -1,0 +1,81 @@
+xc2:
+  1:
+  - Under kV (Fixed)
+  - Under kV (set)
+  - Over kV (Fixed)
+  - Over kV (set)
+  2:
+  - Under mA (Fixed)
+  - Under mA (set)
+  - Over mA (Fixed)
+  - Over mA (set)
+  3:
+  - HV Over Current
+  - Over IF
+  - Under IF
+  - Inverter thermal
+  4:
+  - Abnormal test mode
+  - Cable interlock
+  - X-tube thermal switch
+  - X-tube flow switch
+  5:
+  - Exposure detection even in exposure set to OFF
+  - Abnormal input (AC FAULT)
+  - Arc
+  - Test Mode
+  6:
+  - not defined
+  - not defined
+  - not defined
+  - not defined
+  7:
+  - Filament timeout
+  - Preheat timeout
+  - Rotor timeout
+  - X-ray permissible timeout (CAN timeout)
+  8:
+  - Overtime (hardware)
+  - XC Watchdog
+  - Overtime (software)
+  - not defined
+  9:
+  - Starter trip
+  - Starter NAK
+  - Dropped rotor current
+  - not defined
+  10:
+  - Abnormal focus
+  - OLP limit 100%
+  - Abnormal backup memory
+  - DIP-SW selection error
+  11:
+  - Malfunction of the HV cable
+  - Malfunction of the HV unit
+  - Malfunction of the inverter
+  - Damaged SCB
+  12:
+  - Damaged AC unit
+  - HFG Watchdog timeout
+  - HFG setting
+  - Abnormal setting range
+  13:
+  - ECG modulation low-mA timeout
+  - Exposure pause time timeout
+  - Exposure pause time short
+  - not defined
+  14:
+  - Exposure stopped due to XPOW OFF
+  - Exposure stopped due to open door
+  - Exposure stopped due to noise from X-SYNC
+  - not defined
+  15:
+  - Exposure not detected (Abnormal HFXRAY)
+  - Incorrect exposure detection (Abnormal XRAY)
+  - not defined
+  - not defined
+  16:
+  - Starter communication
+  - Abnormal HFG communication
+  - not defined
+  - XC internal error

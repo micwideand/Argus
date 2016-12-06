@@ -1,0 +1,81 @@
+xc:
+  1:
+  - OR of warning condition
+  - Door open
+  - input power abnormal
+  - under kV (fixed)
+  2:
+  - under mA (fixed)
+  - under kV (set)
+  - over kV (set)
+  - HFG error
+  3:
+  - HV overcurrent
+  - over mA (set)
+  - under mA (set)
+  - over kV (fixed)
+  4:
+  - power overcurrent (set)
+  - over IF (fixed)
+  - over IF (set)
+  - timeout error
+  5:
+  - X-tube flow
+  - X-tube thermal
+  - Cable interlock
+  - power overcurrent (fixed)
+  6:
+  - inverter DC power supply (Low)
+  - test mode
+  - inverter DC power supply (Hi)
+  - SRU status
+  7:
+  - xray exposure permissible timeout
+  - rotor timeout
+  - preheating timeout
+  - XC error
+  8:
+  - test mode error
+  - before local exposure
+  - XC Watchdog timeout
+  - filament timeout
+  9:
+  - starter trip
+  - rotor current drop
+  - starter NAK
+  - starter communication
+  10:
+  - flash memory
+  - backup memory
+  - OLP limit 100%
+  - test sw
+  11:
+  - not defined
+  - not defined
+  - not defined
+  - not defined
+  12:
+  - not defined
+  - not defined
+  - not defined
+  - not defined
+  13:
+  - not defined
+  - not defined
+  - not defined
+  - not defined
+  14:
+  - not defined
+  - not defined
+  - not defined
+  - not defined
+  15:
+  - not defined
+  - not defined
+  - not defined
+  - not defined
+  16:
+  - not defined
+  - not defined
+  - not defined
+  - not defined
